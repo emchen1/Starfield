@@ -1,8 +1,5 @@
 Particle[] aBunch;
-//Particle[] aBunch = new Particle[500];
 
-//OddballParticle oddie;
-//JumboParticle bob;
 void setup()
 {
   size(500, 500);
@@ -50,6 +47,7 @@ class NormalParticle implements Particle
   }
   public void show()
   {
+    noStroke();
     fill(255);   
     ellipse((float)myX, (float)myY, 2, 2);
   }
